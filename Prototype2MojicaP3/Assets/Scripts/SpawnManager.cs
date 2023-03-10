@@ -11,7 +11,7 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeX = 20;
     private float spawnPosZ = 30;
     private float startDelay = 2;
-    private float spawnInterval = 1.2f;
+    private float spawnInterval = 1.3f;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +25,10 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
 
+        if (PlayerController.lives < 1)
+        {
+            CancelInvoke();
+        }
     }
 
     void SpawnRandomAnimal()
@@ -38,7 +42,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnRandomAnimalRightHorizontal()
     {
         int animalIndex = Random.Range(0, animalRightHorizontalPrefabs.Length);
-        Vector3 spawnPosRightHorizontal = new Vector3(25, 0, Random.Range(-5, 30));
+        Vector3 spawnPosRightHorizontal = new Vector3(25, 0, Random.Range(-8, 30));
 
         Instantiate(animalRightHorizontalPrefabs[animalIndex], spawnPosRightHorizontal, animalRightHorizontalPrefabs[animalIndex].transform.rotation);
     }
@@ -46,7 +50,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnRandomAnimalLeftHorizontal()
     {
         int animalIndex = Random.Range(0, animalLeftHorizontalPrefabs.Length);
-        Vector3 spawnPosLeftHorizontal = new Vector3(-25, 0, Random.Range(-5, 30));
+        Vector3 spawnPosLeftHorizontal = new Vector3(-25, 0, Random.Range(-8, 30));
 
         Instantiate(animalLeftHorizontalPrefabs[animalIndex], spawnPosLeftHorizontal, animalLeftHorizontalPrefabs[animalIndex].transform.rotation);
     }

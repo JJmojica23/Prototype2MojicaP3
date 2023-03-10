@@ -438,7 +438,6 @@ GameObject:
   - component: {fileID: 3522441476395112210}
   - component: {fileID: 7492858871297964872}
   - component: {fileID: 3893248800217890414}
-  - component: {fileID: 5257895514371244967}
   m_Layer: 0
   m_Name: LeftHorizontalBrownStag
   m_TagString: Untagged
@@ -529,18 +528,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.14914608, y: 0.43804622, z: 0.39705694}
   m_Center: {x: -0.00014985962, y: 0.2158615, z: 0.04492389}
---- !u!114 &5257895514371244967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3522441475770231557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45404780eb67028459a466b05ca2aa44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3522441475770240641
 GameObject:
   m_ObjectHideFlags: 0

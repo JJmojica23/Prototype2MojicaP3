@@ -1,5 +1,7 @@
+using Newtonsoft.Json.Bson;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -8,6 +10,29 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public float speed = 10.0f;
     public float xRange = 20.0f;
+    private Vector3 offset = new Vector3(0, 0, 1.5f);
+    static int score = 0;
+    public static int lives = 3;
+
+    static public void hit()
+    {
+        lives--;
+        if (lives > 0)
+        {
+            Debug.Log($"Lives = {lives}");
+        }
+        else
+        {
+            Debug.Log("Game Over!");
+            Destroy(GameObject.FindWithTag("FarmerPlayer"));
+        }
+    }
+
+    static public void addScore()
+    {
+        score++;
+        Debug.Log($"Score = {score}");
+    }
 
     public GameObject projectilePrefab;
 
@@ -34,9 +59,9 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, 30);
         }
-        if (transform.position.z < -5)
+        if (transform.position.z < -8)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -5);
+            transform.position = new Vector3(transform.position.x, transform.position.y, -8);
         }
 
         // Moves the player left or right
@@ -46,11 +71,10 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * speed * verticalInput * Time.deltaTime);
 
-
         //Launch a food projectile from player
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, transform.position + offset, projectilePrefab.transform.rotation);
         }
     }
 }

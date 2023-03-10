@@ -863,7 +863,6 @@ GameObject:
   - component: {fileID: 1138404744770230099}
   - component: {fileID: 3528611406096418270}
   - component: {fileID: 6626010911530715790}
-  - component: {fileID: 5269147469242138631}
   m_Layer: 0
   m_Name: BrownMoose
   m_TagString: Untagged
@@ -954,15 +953,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.16571672, y: 0.46285674, z: 0.38700962}
   m_Center: {x: 0.00062027306, y: 0.23337793, z: 0.0658334}
---- !u!114 &5269147469242138631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138404743153440732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45404780eb67028459a466b05ca2aa44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

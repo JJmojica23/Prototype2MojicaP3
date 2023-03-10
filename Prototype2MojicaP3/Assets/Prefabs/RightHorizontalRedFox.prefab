@@ -948,7 +948,6 @@ GameObject:
   - component: {fileID: 538719305363900219}
   - component: {fileID: 4757236980997280197}
   - component: {fileID: 8857467558276068576}
-  - component: {fileID: 2629867628130137276}
   m_Layer: 0
   m_Name: RightHorizontalRedFox
   m_TagString: Untagged
@@ -1041,18 +1040,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12484143, y: 0.32941362, z: 0.29769617}
   m_Center: {x: 0.0032513023, y: 0.15449987, z: 0.005363345}
---- !u!114 &2629867628130137276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538719304932848782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45404780eb67028459a466b05ca2aa44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &538719304932848942
 GameObject:
   m_ObjectHideFlags: 0

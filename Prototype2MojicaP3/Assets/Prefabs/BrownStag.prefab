@@ -353,7 +353,6 @@ GameObject:
   - component: {fileID: 7762691625623310393}
   - component: {fileID: -4853934499146875805}
   - component: {fileID: 7881086126658468165}
-  - component: {fileID: 1418470224515597452}
   m_Layer: 0
   m_Name: BrownStag
   m_TagString: Untagged
@@ -444,18 +443,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.14914608, y: 0.43804622, z: 0.39705694}
   m_Center: {x: -0.00014985962, y: 0.2158615, z: 0.04492389}
---- !u!114 &1418470224515597452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7762691625015077934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45404780eb67028459a466b05ca2aa44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7762691625015097762
 GameObject:
   m_ObjectHideFlags: 0

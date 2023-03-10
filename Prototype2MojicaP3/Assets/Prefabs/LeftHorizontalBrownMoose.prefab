@@ -523,7 +523,6 @@ GameObject:
   - component: {fileID: 6711067918871654366}
   - component: {fileID: 7068057403769470291}
   - component: {fileID: 656043898696495619}
-  - component: {fileID: 2013434585851426954}
   m_Layer: 0
   m_Name: LeftHorizontalBrownMoose
   m_TagString: Untagged
@@ -614,18 +613,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.16571672, y: 0.46285674, z: 0.38700962}
   m_Center: {x: 0.00062027306, y: 0.23337793, z: 0.0658334}
---- !u!114 &2013434585851426954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6711067919397990225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45404780eb67028459a466b05ca2aa44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6711067919397999565
 GameObject:
   m_ObjectHideFlags: 0

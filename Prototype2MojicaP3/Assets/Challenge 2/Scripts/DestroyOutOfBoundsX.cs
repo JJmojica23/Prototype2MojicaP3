@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class DestroyOutOfBoundsX : MonoBehaviour
 {
     private float leftLimit = -30;
     private float bottomLimit = -5;
+    private static int lives = 3;
 
     // Update is called once per frame
     void Update()
@@ -14,12 +16,25 @@ public class DestroyOutOfBoundsX : MonoBehaviour
         if (transform.position.x < leftLimit)
         {
             Destroy(gameObject);
-        } 
+        }
         // Destroy balls if y position is less than bottomLimit
         else if (transform.position.y < bottomLimit)
         {
             Destroy(gameObject);
+            miss();
         }
+    }
 
+    static public void miss()
+    {
+        lives--;
+        if (lives > 0)
+        {
+            Debug.Log($"Lives = {lives}");
+        }
+        else
+        {
+            Debug.Log("Game Over!");
+        }
     }
 }
